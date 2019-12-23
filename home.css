@@ -1,5 +1,5 @@
 body{
-  background-color: #f0f2f2 ;
+  background-color: #F0F2F2 ;
 }
 ul {
   list-style-type: none;
@@ -24,14 +24,33 @@ li a:hover:not(.active) {
 a{
   text-decoration:none
 }
+.btn{
+  margin-top: 100px;
+}
+.savebtn{
+  background-color:#0793C8;
+  height: 38px;
+  width:155px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+.Canclebtn{
+  
+  font-size: 16px;
+  height: 38px;
+  width:155px;
+  border-radius: 10px;
+  outline: none;
+}
 .add{
-  width: 23px;
   position: relative;
-  border-radius: 112%;
   cursor: pointer;
-  color: rgb(78, 78, 223);
-  margin-left: 70%;
+  color: white;
+  margin-left: 1000px;
   margin-top: 0px;
+  width: 30px;
+  font-size: 27px;
 }
 .add:hover{
   color: rgb(5, 5, 129);
@@ -59,7 +78,7 @@ a{
 .curses1 {
     width: 25% ;
     height: 45%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     margin: 10px;
     float: left;
     border-radius: 10px;
@@ -103,81 +122,4 @@ h3{
 .btn{
   margin-left: 65px;
   margin-top: 40px;
-}
-
-/*body{
-  background-color: #f0f2f2 ;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: gray;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-ul li {display: inline-block;}
-ul li:hover {background:gray;}
-ul li:hover ul {display: block;}
-ul li ul {
-  position: absolute;
-  width: 78px;
-  display: none;
-}
-ul li ul li { 
-  background:gray; 
-  display: block; 
-}
-ul li ul li a {
-  display:block ;
-
-} 
-ul li ul li:hover {background: #666;}
-.courses{
-  
-    width: 80%;
-    margin: auto;
-
-}
-.title{
-  text-align: center;
-}
-
-.curses1 {
-  width: 20% ;
-    height: 30%;
-    background-color: #ffffff;
-    margin: 10px;
-    float: left;
-    border-radius: 10px;
-    cursor: pointer;
-    padding-left: 25px;
-  
-}
-.curses1:hover{
-  transform: scale(1.05);
-
-}
-.show{
-  margin-top: 30%;
-  margin-left: 45%;
 }
