@@ -20,6 +20,7 @@ li a {
 }
 li a:hover:not(.active) {
   background-color: gray;
+  height: 31px;
 }
 a{
   text-decoration:none
@@ -36,7 +37,6 @@ a{
   font-size: 16px;
 }
 .Canclebtn{
-  
   font-size: 16px;
   height: 38px;
   width:155px;
@@ -47,7 +47,7 @@ a{
   position: relative;
   cursor: pointer;
   color: white;
-  margin-left: 1000px;
+  margin-left: 961px;
   margin-top: 0px;
   width: 30px;
   font-size: 27px;

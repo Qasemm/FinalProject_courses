@@ -7,16 +7,24 @@
  *{
      outline: none;
  }
+ .input{
+     margin-top: 20px;
+ }
+ .linkPassword{
+     margin-top: 20px;
+ }
  .btn{
     margin-top: 100px;
 }
  .textBio{
      width:400px ;
      height: 200px;
+     border-style: none;
  }
  #BioId{
     width:400px ;
     height: 300px;
+    border-style: none;
  }
  .profileImg{
      width: 200px;
@@ -32,21 +40,23 @@
      height: 300px;
  }
  .savebtn{
-     background-color:#0793C8;
-     height: 38px;
-     width:155px;
-     border-radius: 10px;
-     outline: none;
-     font-size: 16px;
- }
- .Canclebtn{
-     
-     font-size: 16px;
-     height: 38px;
-     width:155px;
-     border-radius: 10px;
-     outline: none;
- }
+    background-color:#0793C8;
+    height: 38px;
+    width:155px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+.Canclebtn{
+    font-size: 16px;
+    height: 38px;
+    width:155px;
+    border-radius: 10px;
+    outline: none;
+    float: right;
+   margin-top: -37px;
+   margin-right: 115px;
+}
  body{
      background-color: #f0f2f2 ;
  }

@@ -1,4 +1,33 @@
- var SaveBtn=document.getElementById('save');
+/*let save_btn=document.getElementById('save_btn');
+save_btn.style.display="none"
+let inputs=document.getElementsByClassName("input");
+for(let i=0;i<inputs.length;i++){
+  inputs[i].setAttribute("readonly","")
+  inputs[i].style.backgroundColor="transparent"
+  }
+
+function change_value(){
+  save_btn.style.display="block"
+  for(let i=0;i<inputs.length;i++){
+    if(i==1){
+    }else{
+      inputs[i].removeAttribute("readonly")
+      inputs[i].style.backgroundColor="white"
+    }
+  }
+}
+function save(){
+  for(let i=0;i<inputs.length;i++){
+  inputs[i].setAttribute("readonly","")
+  inputs[i].style.backgroundColor="transparent"
+  }
+  save_btn.style.display="none"
+}
+*/
+
+
+
+var SaveBtn=document.getElementById('save');
      var CancleBtn=document.getElementById('cancle');
      var EditIcon=document.getElementById('EditId');
      var paragraph=document.getElementById("BioId");

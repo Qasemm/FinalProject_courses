@@ -9,6 +9,7 @@
     <li><a href="NGoProfile.html">Profile</a></li>
     <li  title="Add Course">
       <a class="add" href="courses.html">&#43;</a></li>
+      <li><a>log out</a></li>
 </ul>
   <br>
   <br>
@@ -19,12 +20,13 @@
     </div>
     
     <div class="AllCourse">
+      <a> </a>
     <div class="curses1" id="course">
       courses1 
      <a> <img src="error.png" class="cancel"></a>
       <br>
       <br>
-      <div class="desc">descriptio>nfjdvckjlnfdnc
+      <div class="desc" id="desc">descriptio>nfjdvckjlnfdnc
         lfc jcxskc
         jckoacjwkafj
         kndaoikjdscf
@@ -33,12 +35,13 @@
         mc,,lc,;c,
       </div>
     </div>
+
     <div class="curses1" id="course">
       courses2 
       <a> <img src="error.png" class="cancel" ></a>
       <br>
       <br>
-      <div class="desc">descriptio>nfjdvckjlnfdnc
+      <div class="desc" id="desc">descriptio>nfjdvckjlnfdnc
         lfc jcxskc
         jckoacjwkafj
         kndaoikjdscf
@@ -51,7 +54,7 @@
       <a> <img src="error.png" class="cancel" id="cancel"></a>
       <br>
       <br>
-      <div class="desc">descriptio>nfjdvckjlnfdnc
+      <div class="desc" id="desc">descriptio>nfjdvckjlnfdnc
         lfc jcxskc
         jckoacjwkafj
         kndaoikjdscf
@@ -64,16 +67,25 @@
   <div class="show">
     <a href="" class="show">Show More</a>
   </div>
+  <script src="js.js"></script>
   <script>
-  document.getElementById("course").addEventListener('click',coursePage);
+
+let close_item=document.getElementsByClassName("cancel");
+enable_close();
+function enable_close(){
+  for(let i=0;i<close_item.length;i++){
+    close_item[i].addEventListener("click",e=>{
+    e.target.parentElement.parentElement.remove();
+  })
+  }
+};
+document.getElementById("desc").addEventListener('click',coursePage);
   function coursePage(){
     window.location = 'coursesPage.html';
   }
-  document.getElementById("cancel").addEventListener('click',delet);
-  function delet()
-  {
-    document.getElementById("course").style.visibility='hidden';
-  }
+
+
+
   </script>
 </body>
 </html>

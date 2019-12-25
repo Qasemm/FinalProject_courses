@@ -17,27 +17,72 @@
        <label>
       <img src="user_icon.jpg" alt="" id="preview">
      
-      <input type="file" id="filetag" style="visibility: hidden;"></label>
+      <input class="input" type="file" id="filetag" style="visibility: hidden;"></label>
     </div>
 ​
     <div  class="infoProfile" id="infoProfile" >
-      <h3 id="name">NGO Name</h3>
-      <p id="url">http://www.NGO.com</p>
-       <p id="password">password </p>
-       <p id="email">ngo@gmail.com </p>
- 
-​
+        <div>
+            <input type="text" class="input" value="NGO Name"></input>
+</div>
+<div>
+    <input type="text" class="input" value="www.ngo.com"></input>
+</div>
+<div>
+    <input type="email" class="input" value="ngo@gmail.com"></input>
+</div>
+<div class="txt">
+<a style="margin-top: 20px;" class="linkPassword" href="#">Password </a>
+</div>
     </div>
   </div>
   <div class="Bio">
     <h2>NGO Name <img id="EditId" class="EditIcon" src="iconfinder_edit.png" onclick="change_value()"></h2>
     <h3>Bio: </h3>
-    <p id="BioId">aaaaaaaaaaaaaaaaaaaa</p>
+    <textarea class="input" id="BioId">aaaaaaaaaaaaaaaaaaaa</textarea>
     <div class="btn">
             <button type="submit" id="save" class="savebtn" onclick="save()">save</button>
             <button type="submit" id="cancle" class="Canclebtn">Cancle</button>
     </div>
   </div>
-  <script src="EditNGOProfile.js"></script>  
+ <!--  <script src="EditNGOProfile.js"></script> -->   
+  <script>
+  let save_btn=document.getElementById('save');
+    save_btn.style.display="none";
+    let cancle_btn=document.getElementById('cancle');
+    cancle_btn.style.display="none";
+    let inputs=document.getElementsByClassName("input");
+    for(let i=0;i<inputs.length;i++){
+      inputs[i].setAttribute("readonly","");
+      inputs[i].style.backgroundColor="transparent";
+      };
+      document.getElementById("EditIcon").addEventListener("click",change_value);
+    function change_value(){
+      save_btn.style.display="block";
+      cancle_btn.style.display="block";
+      for(let i=0;i<inputs.length;i++){
+          
+          inputs[i].removeAttribute("readonly");
+          inputs[i].style.backgroundColor="white";
+         
+      }
+    };
+    function save(){
+      for(let i=0;i<inputs.length;i++){
+      inputs[i].setAttribute("readonly","");
+      inputs[i].style.backgroundColor="transparent";
+      }
+      save_btn.style.display="none";
+      cancle_btn.style.display="none";
+    }
+    function cancle(){
+        let inputs=document.getElementsByClassName("input");
+    for(let i=0;i<inputs.length;i++){
+      inputs[i].setAttribute("readonly","");
+      inputs[i].style.backgroundColor="transparent";
+      };
+      save_btn.style.display="none";
+      cancle_btn.style.display="none";
+    }
+  </script>
 </body>
 </html>
